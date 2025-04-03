@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תשלום</title>
+    <link rel="stylesheet" href="../css/payment.css"> 
+    <link rel="icon" href="../images/00.png">
+    <script src="../js/payment.js" defer></script>
+    <script src="../js/connection.js" defer></script>
+</head>
+
+<body dir="rtl">
+    <header dir="rtl" class="sticky-top">
+        <div class="header-nav">
+            <img src="../images/000.png" class="w-5">
+            <a class="nav-item" href="../html/home.html">דף הבית</a>
+            <a class="nav-item" href="../html/cards.html">מוצרים</a>
+        </div>
+        <div class="header-icons">
+            <a href="../html/cart.html" id="cartIcon" title="סל קניות">
+                <img src="../icons/cart.svg">
+            </a>
+            <div id="userSection">
+                <span id="userNameDisplay"></span>
+                <button id="logoutButton" style="display: none;">התנתקות</button>
+            </div>
+            <a href="../html/connection.html" id="connection" class="nav-item pointer">
+                <img src="../icons/Contacts.svg" alt="Icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="payment-container">
+            <h3>פרטי אשראי</h3>
+            <form id="paymentForm">
+                <label for="cardNumber">מספר כרטיס:</label>
+                <input type="text" id="cardNumber" required pattern="\d{16}" maxlength="16"><br><br>
+
+                <label for="expiryDate">תוקף (MM/YY):</label>
+                <input type="text" id="expiryDate" required pattern="\d{2}/\d{2}" maxlength="5"><br><br>
+
+                <label for="cvv">cvc:</label>
+                <input type="text" id="cvv" required pattern="\d{3}" maxlength="3"><br><br>
+
+                <label for="idNumber">מספר זהות :</label>
+                <input type="text" id="idNumber" required pattern="\d{9}" maxlength="9"><br><br>
+
+                <label for="cardHolder">שם בעל הכרטיס:</label>
+                <input type="text" id="cardHolder" required><br><br>
+
+                <button type="submit">בצע תשלום</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

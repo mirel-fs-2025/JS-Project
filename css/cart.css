@@ -1,0 +1,162 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif; 
+    background-color: #f5f5f5; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px 40px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+    box-sizing: border-box; 
+    border-bottom: 1px solid #ddd; 
+}
+
+header img {
+    width: 60px; 
+}
+
+.header-nav {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.header-icons {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.header-icons a {
+    display: flex; 
+    align-items: center; 
+}
+
+.header-icons img {
+    width: 30px; 
+    height: auto; 
+}
+
+header .nav-item {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+}
+
+header .nav-item:hover {
+    color: #007bff; 
+}
+
+main {
+    margin-top: 45px; 
+}
+
+.container {
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    margin: 50px auto; 
+    padding: 20px; 
+    width: 90%; 
+    max-width: 800px; 
+    text-align: center; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    margin-top: 20px; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+th, td {
+    padding: 15px; 
+    text-align: center; 
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    background-color: #007bff; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+td {
+    background-color: #f9f9f9; 
+}
+
+thead th {
+    border-bottom: 2px solid #0056b3; 
+}
+
+tbody tr:last-child td {
+    border-bottom: none; 
+}
+
+.container {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    background-color: #fff; 
+}
+
+tr:hover {
+    background-color: #e9ecef; 
+}
+
+input[type="number"] {
+    width: 50px; 
+    padding: 5px; 
+}
+
+button {
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #a0a0a0; 
+    color: white; 
+}
+
+.message {
+    font-size: 18px; 
+    color: #666; 
+    margin-top: 20px; 
+}
+
+#totalPriceContainer {
+    margin-top: 20px; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+#checkoutButton {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    display: block; 
+}
+
+#checkoutButton:hover {
+    background-color: #a0a0a0; 
+    color: white; 
+}

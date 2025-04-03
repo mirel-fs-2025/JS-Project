@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../images/00.png">
+    <script src="../js/connection.js" defer></script>
+</head>
+
+<body dir="rtl">
+    <header dir="rtl" class="sticky-top">
+        <div class="header-nav">
+            <img src="../images/000.png" class="w-5">
+            <a class="nav-item" href="../html/home.html">דף הבית</a>
+            <a class="nav-item" href="../html/cards.html">מוצרים</a>
+        </div>
+        <div class="header-icons">
+            <a href="../html/cart.html" id="cartIcon" title="סל קניות">
+                <img src="../icons/cart.svg">
+            </a>
+            <div id="userSection">
+                <span id="userNameDisplay"></span>
+                <button id="logoutButton" style="display: none;">התנתקות</button>
+            </div>
+            <a href="../html/connection.html" id="connection" class="nav-item pointer">
+                <img src="../icons/Contacts.svg" alt="Icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="signInElement" class="container w-25">
+            <div class="title-container">
+                <label class="title-label">התחברות למערכת</label>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form id="signInForm">
+                        <div class="form-group mt-3">
+                            <label class="bold mb-2">שם משתמש</label>
+                            <input id="signInUserName" type="text" class="form-control">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="bold mb-2">סיסמא</label>
+                            <input id="signInPassword" type="password" class="form-control">
+                        </div>
+                    </form>
+                    <div class="d-flex mt-3">
+                        <button onclick="signUp()" class="t-button btn">הרשמה</button>
+                        <div class="flex-fill"></div>
+                        <button onclick="connection()" class="t-button btn">התחברות</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

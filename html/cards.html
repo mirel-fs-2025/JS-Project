@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מוצרים</title>
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="icon" href="../images/00.png">
+    <script src="../js/productsCard.js" defer></script>
+    <script src="../js/connection.js" defer></script>
+</head>
+
+<body dir="rtl">
+    <header dir="rtl" class="sticky-top">
+        <div class="header-nav">
+            <img src="../images/000.png" class="w-5">
+            <a class="nav-item" href="../html/home.html">דף הבית</a>
+            <a class="nav-item" href="../html/cards.html">מוצרים</a>
+        </div>
+        <div class="header-icons">
+            <a href="../html/cart.html" id="cartIcon" title="סל קניות">
+                <img src="../icons/cart.svg">
+            </a>
+            <div id="userSection">
+                <span id="userNameDisplay"></span>
+                <button id="logoutButton" style="display: none;">התנתקות</button>
+            </div>
+            <a href="../html/connection.html" id="connection" class="nav-item pointer">
+                <img src="../icons/Contacts.svg" alt="Icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <input type="text" id="filterInput" placeholder="חיפוש">
+        <select id="sortSelect">
+            <option value="default">הצג לפי</option>
+            <option value="priceHighToLow">מהמחיר הגבוה לנמוך</option>
+            <option value="priceLowToHigh">מהמחיר הנמוך לגבוה</option>
+        </select>
+        <button id="resetFilterButton">אפס סינון</button>
+
+        <div id="productCardsContainer"></div>
+    </main>
+</body>
+
+</html>
